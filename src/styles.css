@@ -1,0 +1,43 @@
+/* src/styles.css */
+/* Luxury fonts and dark theme */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 3rem;
+  color: #d4af37; /* Gold color */
+  margin: 20px 0;
+}
+
+button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d4af37;
+  color: #121212;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c19a2d;
+}
+
+a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

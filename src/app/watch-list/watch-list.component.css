@@ -1,0 +1,149 @@
+/* Title Styling */
+.page-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #d4af37;
+  margin: 0;
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Increased gap between filters */
+  margin-bottom: 30px;
+}
+
+.search-bar-container,
+.filter-dropdown-container {
+  width: 250px;
+  position: relative;
+}
+
+.search-bar,
+.filter-dropdown {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #d4af37; /* Gold border */
+  border-radius: 20px;
+  background-color: #1e1e1e; /* Dark background */
+  color: #ffffff; /* White text */
+  font-size: 1rem;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23ffffff' d='M5.516 7.116a.5.5 0 01.735-.06l3.25 3 3.25-3a.5.5 0 11.676.738l-3.25 3a.5.5 0 01-.676 0l-3.25-3a.5.5 0 01-.06-.678z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center; /* Custom dropdown arrow */
+  background-size: 12px;
+  cursor: pointer;
+}
+
+.search-bar::placeholder,
+.filter-dropdown::placeholder {
+  color: #aaa;
+}
+
+.search-bar:hover,
+.filter-dropdown:hover {
+  border-color: #ffd700; /* Brighter gold border on hover */
+  box-shadow: 0px 4px 10px rgba(255, 215, 0, 0.5); /* Glow effect */
+}
+
+.filter-dropdown:focus {
+  outline: none;
+  border-color: #ffd700;
+}
+
+/* Dropdown Options Styling */
+.filter-dropdown option {
+  background-color: #1e1e1e; /* Match dropdown background */
+  color: #ffffff; /* White text */
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Ensure All Options Are Visible */
+.filter-dropdown {
+  height: auto; /* Allow dropdown to expand */
+  overflow-y: auto; /* Add scroll if necessary */
+}
+
+/* Watch List Section */
+.watch-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Two rows of 5 columns */
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.watch-card {
+  width: 220px;
+  height: 370px; /* Adjusted height to include price */
+  background-color: #1d1d1b;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.watch-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.5);
+  border: 2px solid #d4af37;
+}
+
+.watch-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.watch-card h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.watch-card p {
+  font-size: 1rem;
+  color: #aaa;
+  margin: 5px 0;
+}
+
+.watch-card p.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #d4af37; /* Gold for the price */
+  margin-top: 10px;
+}
+
+/* History Button Styling */
+.history-button-container {
+  text-align: center;
+  margin-top: 40px; /* Space between the frames and button */
+}
+
+.history-button {
+  padding: 12px 25px;
+  background-color: #d4af37;
+  color: #121212;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.history-button:hover {
+  background-color: #b6862e;
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
