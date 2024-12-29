@@ -3,6 +3,7 @@ import { provideRouter, Route } from '@angular/router';
 import { AppComponent } from './app/app.component';
 import { WatchListComponent } from './app/watch-list/watch-list.component';
 import { HistoryComponent } from './app/history/history.component'; // Import the HistoryComponent
+import { provideHttpClient } from '@angular/common/http';
 
 const routes: Route[] = [
   { path: '', component: WatchListComponent }, // Main page
@@ -10,5 +11,5 @@ const routes: Route[] = [
 ];
 
 bootstrapApplication(AppComponent, {
-  providers: [provideRouter(routes)],
+  providers: [provideRouter(routes), provideHttpClient()],
 }).catch((err) => console.error(err));

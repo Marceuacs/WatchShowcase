@@ -14,7 +14,7 @@
     />
   </div>
 
-  <!-- Filter By Type -->
+  
   <div class="filter-dropdown-container">
     <select [(ngModel)]="filterType" (change)="applyFilter()" class="filter-dropdown">
       <option value="">Filter By Type</option>
@@ -27,18 +27,18 @@
   </div>
 </div>
 
-<!-- Watch List -->
+
 <div class="watch-list">
   <div *ngFor="let watch of filteredWatches" class="watch-card">
     <img [src]="watch.image" [alt]="watch.model" class="watch-image" />
-    <h3>{{ watch.brand }}</h3>
+    <h3>{{ watch.name }}</h3>
     <p><strong>Model:</strong> {{ watch.model }}</p>
     <p><strong>Type:</strong> {{ watch.type }}</p>
     <p class="price"><strong>Price:</strong> {{ watch.price }}</p>
   </div>
 </div>
 
-<!-- Button to navigate to the History of Watches page -->
+
 <div class="history-button-container">
   <a href="/history" class="history-button">History of Watches</a>
 </div>
